@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- tailwind cdn link -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="login_container">
+        <div class="container">
+            <div class="screen">
+                <div class="screen__content">
+                    <form class="login">
+                        <div class="login__field">
+                            <i class="login__icon fas fa-user"></i>
+                            <input type="text" id="email" class="login__input" placeholder="User name / Email">
+                        </div>
+                        <div class="login__field">
+                            <i class="login__icon fas fa-lock"></i>
+                            <input type="password" id="password" class="login__input" placeholder="Password">
+                        </div>
+                        <button onclick="loginUser()" class="button login__submit">
+                            <span class="button__text">Log In Now</span>
+                            <i class="button__icon fas fa-chevron-right"></i>
+                        </button>				
+                    </form>
+                    <div class="social-login">
+                        <h3>log in via</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-login__icon fab fa-instagram"></a>
+                            <a href="#" class="social-login__icon fab fa-facebook"></a>
+                            <a href="#" class="social-login__icon fab fa-twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen__background">
+                    <span class="screen__background__shape screen__background__shape4"></span>
+                    <span class="screen__background__shape screen__background__shape3"></span>		
+                    <span class="screen__background__shape screen__background__shape2"></span>
+                    <span class="screen__background__shape screen__background__shape1"></span>
+                </div>		
+            </div>
+        </div>
+    </div>
+    <div id="home_container">
+        <div class="home_section">
+            <h1>Welcome to Home Page</h1>
+            <span>
+                <button class="user_email" id="user_email"></button>
+                <button onclick="logoutUser()">Sign Out</button>
+            </span>
+        </div>
+
+        <div class="textarea">
+            <div>
+                <textarea class="" id="notes" cols="30" rows="15">Add Your Notes</textarea>
+            </div>
+            <div>
+                <button onclick="submitNotes()" class="add_note">Add Note</button>
+            </div>
+            <ul id="list">
+            
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
